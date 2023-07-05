@@ -13,6 +13,7 @@
 import SwiftUI
 import PhoneNumberKit
 
+@available(iOS 15.0, *)
 public extension iPhoneNumberField {
     
     /// Modifies the text field’s **font** from a `UIFont` object. 🔠🔡
@@ -29,7 +30,6 @@ public extension iPhoneNumberField {
     /// Modifies the **text color** 🎨 of the text field.
     /// - Parameter color: The desired text color 🌈
     /// - Returns: An updated text field using the desired text color 🚦
-    @available(iOS 14, *)
     func foregroundColor(_ color: Color?) -> Self {
         if let color = color {
             return foregroundColor(UIColor(color))
@@ -70,7 +70,6 @@ public extension iPhoneNumberField {
     /// Modifies the **placeholder color** 🌈 of the text field.
     /// - Parameter color: The placeholder color. 🎨
     /// - Returns: A phone number text field with updated placeholder color. 🚥🖍
-    @available(iOS 14, *)
     func placeholderColor(_ color: Color?) -> Self {
         self
             .numberPlaceholderColor(color)
@@ -98,7 +97,6 @@ public extension iPhoneNumberField {
     /// Modifies the **number placeholder color** 🌈 of the text field.
     /// - Parameter color: The placeholder color. 🎨
     /// - Returns: A phone number text field with updated number placeholder color.
-    @available(iOS 14, *)
     func numberPlaceholderColor(_ color: Color?) -> Self {
         if let color = color {
             return numberPlaceholderColor(UIColor(color))
@@ -134,7 +132,6 @@ public extension iPhoneNumberField {
     /// Modifies the **country code placeholder color** 🌈 of the text field.
     /// - Parameter color: The country code placeholder color 🎨
     /// - Returns: A phone number text field with updated country code placeholder color
-    @available(iOS 14, *)
     func countryCodePlaceholderColor(_ color: Color?) -> Self {
         if let color = color {
             return countryCodePlaceholderColor(UIColor(color))

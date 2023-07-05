@@ -15,6 +15,7 @@ public typealias NativeFont = UIFont
 public typealias NativeFontDescriptor = UIFontDescriptor
 #endif
 
+@available(iOS 15.0, *)
 public extension NativeFont {
     /// Initializes a `UIFont` using the same system initializer syntax available in `Font` 🔠🔡
         /// - Parameters:

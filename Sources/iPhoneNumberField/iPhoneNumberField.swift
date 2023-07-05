@@ -14,6 +14,7 @@ import SwiftUI
 import PhoneNumberKit
 
 /// A text field view representable structure that formats the user's phone number as they type.
+@available(iOS 15.0, *)
 public struct iPhoneNumberField: UIViewRepresentable {
     
     /// The formatted phone number `String`.
